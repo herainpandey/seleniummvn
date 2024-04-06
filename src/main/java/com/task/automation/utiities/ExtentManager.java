@@ -16,13 +16,8 @@ public class ExtentManager {
                 .append(new SimpleDateFormat("dd_MM_yyy_HH_mm_ss")
                         .format(new Date())).append(".html").toString();
 
-        //Report Directory path
-        String reportDirectory = Constants.REPORTS_DIRECTORY;
-        new File(reportDirectory).mkdirs();
-        String path = reportDirectory+"/"+fileName;
-
         //Layout of Report
-        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(path);
+        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(Constants.REPORTS_DIRECTORY + File.separator +fileName);
         sparkReporter.config().setTheme(Theme.STANDARD);
         sparkReporter.config().setDocumentTitle("Automation Run");
         sparkReporter.config().setEncoding("UTF-8");
