@@ -1,0 +1,12 @@
+{
+  "firstName" : "demo",
+  "lastName" : "iser",
+  "city" :   "Delhi",
+  "addressLineOne" : "C-37 old",
+  "postalCode" : "110009",
+  "email" : "demouser@gmail.com",
+  "company" : "ABC_Company",
+  "country" : "India",
+  "state" : "Delhi"
+
+}

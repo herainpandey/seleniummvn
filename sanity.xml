@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testbg.org/testng-1.0.dtd">
+
+
+<suite name="sanitySuite" >
+    <groups>
+        <run>
+            <include name="sanity"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="com.task.automation.utiities.RetryListeners"></listener>
+        <listener class-name="com.task.automation.utiities.TestNGListeners"></listener>
+    </listeners>
+
+    <test name="sanity">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.task.automation.MyFirstTestCase"></class>
+        </classes>
+    </test>
+</suite>

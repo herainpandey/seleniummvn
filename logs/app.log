@@ -1,0 +1,21 @@
+2024-03-10 08:23:14,186 INFO l.TestListeners [main] onStart -> Test Name: Regression
+2024-03-10 08:23:14,197 INFO l.TestListeners [main] These methods will be executed in this <test> tag
+2024-03-10 08:23:14,197 INFO l.TestListeners [main] loginUserCheckoutFlowFaiedCase
+2024-03-10 08:23:14,197 INFO l.TestListeners [main] logoutUserCheckoutFlow
+2024-03-10 08:23:17,925 INFO l.TestListeners [main] onTestStart -> Test Name: loginUserCheckoutFlowFaiedCase
+2024-03-10 08:23:21,755 INFO p.StorePage [main] Going to enter color for Search
+2024-03-10 08:23:23,327 INFO p.StorePage [main] Going to enter product on cart
+2024-03-10 08:23:23,360 INFO p.StorePage [main] Product from list Dark Grey Jeans
+2024-03-10 08:23:23,379 INFO p.StorePage [main] Product from list Green Tshirt
+2024-03-10 08:23:23,420 INFO p.StorePage [main] Product from list Dark Brown Jeans
+2024-03-10 08:23:23,458 INFO p.StorePage [main] Product from list Faint Blue Jeans
+2024-03-10 08:23:23,468 ERROR p.StorePage [main] Product not found
+2024-03-10 08:23:23,468 ERROR p.StorePage [main] Item not added to cart
+2024-03-10 08:23:23,469 INFO l.TestListeners [main] onTestFailure -> Test Method Name: loginUserCheckoutFlowFaiedCase
+2024-03-10 08:23:27,015 INFO l.TestListeners [main] onTestStart -> Test Name: logoutUserCheckoutFlow
+2024-03-10 08:23:31,110 INFO p.StorePage [main] Going to enter color for Search
+2024-03-10 08:23:32,922 INFO p.StorePage [main] Going to enter product on cart
+2024-03-10 08:23:32,935 INFO p.StorePage [main] Product from list Blue Shoes
+2024-03-10 08:23:34,164 INFO p.StorePage [main] Product added
+2024-03-10 08:23:46,347 INFO l.TestListeners [main] onTestSuccess -> Test Method Name: logoutUserCheckoutFlow
+2024-03-10 08:23:46,947 INFO l.TestListeners [main] onFinish -> Test Name: Regression

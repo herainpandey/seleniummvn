@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testbg.org/testng-1.0.dtd">
+
+
+<suite name="ParallelRunSuite" >
+    <groups>
+        <run>
+            <include name="regression"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="com.task.automation.utiities.RetryListeners"></listener>
+        <listener class-name="com.task.automation.utiities.TestNGListeners"></listener>
+    </listeners>
+
+    <test name="Regression" parallel="classes" thread-count="3">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.task.automation.MyFirstTestCase"></class>
+            <class name="com.task.automation.MySecondTestCase"></class>
+            <class name="com.task.automation.MyThirdTestCase"></class>
+        </classes>
+    </test>
+</suite>
