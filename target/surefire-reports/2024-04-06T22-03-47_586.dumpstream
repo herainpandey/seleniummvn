@@ -1,4 +1,4 @@
-# Created at 2024-04-06T20:44:56.434
+# Created at 2024-04-06T22:03:47.780
 Boot Manifest-JAR contains absolute paths in classpath 'D:\IT\Project\AmazonPractice\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

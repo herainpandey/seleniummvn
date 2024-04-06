@@ -8,6 +8,8 @@ import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 
 public class BaseTest extends CustomHelper {
 
@@ -24,7 +26,7 @@ public class BaseTest extends CustomHelper {
 
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
-    public void initializeDriver(String browser){
+    public void initializeDriver(String browser) throws MalformedURLException, URISyntaxException {
         System.out.println("driver is initialised");
         this.setDriver(DriverManager.getInstance().InitializeDriver(browser));
     }

@@ -1,38 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-06T20:44:57 IST" name="sanitySuite" finished-at="2024-04-06T20:45:18 IST" duration-ms="20722">
+  <suite started-at="2024-04-06T22:03:48 IST" name="sanitySuite" finished-at="2024-04-06T22:04:29 IST" duration-ms="40469">
     <groups>
       <group name="regression">
         <method signature="MyFirstTestCase.logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" name="logoutUserCheckoutFlow" class="com.task.automation.MyFirstTestCase"/>
+        <method signature="MyFirstTestCase.logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" name="logoutUserCheckoutFlow" class="com.task.automation.MyFirstTestCase"/>
       </group> <!-- regression -->
       <group name="sanity">
         <method signature="MyFirstTestCase.logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" name="logoutUserCheckoutFlow" class="com.task.automation.MyFirstTestCase"/>
+        <method signature="MyFirstTestCase.logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" name="logoutUserCheckoutFlow" class="com.task.automation.MyFirstTestCase"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-04-06T20:44:57 IST" name="sanity" finished-at="2024-04-06T20:45:18 IST" duration-ms="20722">
+    <test started-at="2024-04-06T22:03:48 IST" name="sanity1" finished-at="2024-04-06T22:04:22 IST" duration-ms="33367">
       <class name="com.task.automation.MyFirstTestCase">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T20:44:57 IST" name="initializeDriver" finished-at="2024-04-06T20:44:59 IST" duration-ms="1603" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T22:03:48 IST" name="initializeDriver" finished-at="2024-04-06T22:03:50 IST" duration-ms="1589" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[remote_chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T20:44:59 IST" name="logoutUserCheckoutFlow" finished-at="2024-04-06T20:45:18 IST" duration-ms="18905" status="PASS">
+        <test-method retried="true" signature="logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T22:03:50 IST" name="logoutUserCheckoutFlow" finished-at="2024-04-06T22:04:04 IST" duration-ms="14223" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[The element with the reference f.BE3C396D28F8A85917B65B7AA2CC0E3C.d.19B26324F06017A73F73399437FF66D5.e.172 is not known in the current browsing context
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [58745f59-4faa-4c07-b929-f55fc5274c3a, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.BE3C396D28F8A85917B65B7AA2CC0E3C.d.19B26324F06017A73F73399437FF66D5.e.172}]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.1, moz:accessibilityChecks: false, moz:buildID: 20240321230221, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23356, moz:profile: C:\Users\herai\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.187:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 58745f59-4faa-4c07-b929-f55fc5274c3a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: The element with the reference f.BE3C396D28F8A85917B65B7AA2CC0E3C.d.19B26324F06017A73F73399437FF66D5.e.172 is not known in the current browsing context
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [58745f59-4faa-4c07-b929-f55fc5274c3a, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.BE3C396D28F8A85917B65B7AA2CC0E3C.d.19B26324F06017A73F73399437FF66D5.e.172}]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.1, moz:accessibilityChecks: false, moz:buildID: 20240321230221, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23356, moz:profile: C:\Users\herai\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.187:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 58745f59-4faa-4c07-b929-f55fc5274c3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:468)
+at com.task.automation.pages.CheckoutPage.selectFromDropDown(CheckoutPage.java:54)
+at com.task.automation.pages.CheckoutPage.enterBillingDetailsNewUser(CheckoutPage.java:37)
+at com.task.automation.MyFirstTestCase.logoutUserCheckoutFlow(MyFirstTestCase.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutUserCheckoutFlow -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T20:45:18 IST" name="quitDriver" finished-at="2024-04-06T20:45:18 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T22:04:04 IST" name="quitDriver" finished-at="2024-04-06T22:04:04 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T22:04:04 IST" name="initializeDriver" finished-at="2024-04-06T22:04:05 IST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[remote_chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T22:04:05 IST" name="logoutUserCheckoutFlow" finished-at="2024-04-06T22:04:22 IST" duration-ms="16198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUserCheckoutFlow -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.task.automation.MyFirstTestCase@1bc715b8]" started-at="2024-04-06T22:04:22 IST" name="quitDriver" finished-at="2024-04-06T22:04:22 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.task.automation.MyFirstTestCase -->
-    </test> <!-- sanity -->
+    </test> <!-- sanity1 -->
+    <test started-at="2024-04-06T22:03:48 IST" name="sanity2" finished-at="2024-04-06T22:04:29 IST" duration-ms="40469">
+      <class name="com.task.automation.MyFirstTestCase">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" started-at="2024-04-06T22:03:48 IST" name="initializeDriver" finished-at="2024-04-06T22:03:52 IST" duration-ms="3449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[remote_firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method retried="true" signature="logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" started-at="2024-04-06T22:03:52 IST" name="logoutUserCheckoutFlow" finished-at="2024-04-06T22:04:07 IST" duration-ms="15586" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: invalid element id
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4b24f1172a789ac29e8597c47df52b77, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=a5d0e204-29d5-4a6d-afee-f99b1b95d36d}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\herai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.187:4444/ses..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b24f1172a789ac29e8597c47df52b77]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: invalid element id
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4b24f1172a789ac29e8597c47df52b77, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=a5d0e204-29d5-4a6d-afee-f99b1b95d36d}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\herai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.187:4444/ses..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b24f1172a789ac29e8597c47df52b77
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:468)
+at com.task.automation.pages.CheckoutPage.selectFromDropDown(CheckoutPage.java:54)
+at com.task.automation.pages.CheckoutPage.enterBillingDetailsNewUser(CheckoutPage.java:40)
+at com.task.automation.MyFirstTestCase.logoutUserCheckoutFlow(MyFirstTestCase.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUserCheckoutFlow -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" started-at="2024-04-06T22:04:07 IST" name="quitDriver" finished-at="2024-04-06T22:04:08 IST" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" started-at="2024-04-06T22:04:08 IST" name="initializeDriver" finished-at="2024-04-06T22:04:11 IST" duration-ms="2509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[remote_firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="logoutUserCheckoutFlow()[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" started-at="2024-04-06T22:04:11 IST" name="logoutUserCheckoutFlow" finished-at="2024-04-06T22:04:28 IST" duration-ms="17634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUserCheckoutFlow -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.task.automation.MyFirstTestCase@3a94964]" started-at="2024-04-06T22:04:28 IST" name="quitDriver" finished-at="2024-04-06T22:04:29 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.task.automation.MyFirstTestCase -->
+    </test> <!-- sanity2 -->
   </suite> <!-- sanitySuite -->
 </testng-results>

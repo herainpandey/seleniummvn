@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-sanitySuite" class="navigator-link">
-              <span class="suite-name border-passed">sanitySuite</span>
+              <span class="suite-name border-skipped">sanitySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-sanitySuite" class="navigator-link ">
-                    <span>D:\IT\Project\AmazonPractice\sanity.xml</span>
+                    <span>D:\IT\Project\AmazonPractice\gridparallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-sanitySuite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,  2 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-sanitySuite" class="hide-methods skipped suite-sanitySuite"> (hide)</a> <!-- hide-methods skipped suite-sanitySuite -->
+                      <a href="#" panel-name="suite-sanitySuite" class="show-methods skipped suite-sanitySuite"> (show)</a> <!-- show-methods skipped suite-sanitySuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-sanitySuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-sanitySuite" title="com.task.automation.MyFirstTestCase" class="method navigator-link" hash-for-method="logoutUserCheckoutFlow">logoutUserCheckoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-sanitySuite" title="com.task.automation.MyFirstTestCase" class="method navigator-link" hash-for-method="logoutUserCheckoutFlow">logoutUserCheckoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-sanitySuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +120,11 @@
                       <a href="#" panel-name="suite-sanitySuite" class="show-methods passed suite-sanitySuite"> (show)</a> <!-- show-methods passed suite-sanitySuite -->
                     </span>
                     <div class="method-list-content passed suite-sanitySuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-sanitySuite" title="com.task.automation.MyFirstTestCase" class="method navigator-link" hash-for-method="logoutUserCheckoutFlow">logoutUserCheckoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-sanitySuite" title="com.task.automation.MyFirstTestCase" class="method navigator-link" hash-for-method="logoutUserCheckoutFlow">logoutUserCheckoutFlow</a> <!-- method navigator-link -->
@@ -118,6 +142,79 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-sanitySuite" class="panel sanitySuite">
+          <div class="suite-sanitySuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.task.automation.MyFirstTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUserCheckoutFlow">
+                  </a> <!-- logoutUserCheckoutFlow -->
+                  <span class="method-name">logoutUserCheckoutFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: The element with the reference f.BE3C396D28F8A85917B65B7AA2CC0E3C.d.19B26324F06017A73F73399437FF66D5.e.172 is not known in the current browsing context
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [58745f59-4faa-4c07-b929-f55fc5274c3a, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.BE3C396D28F8A85917B65B7AA2CC0E3C.d.19B26324F06017A73F73399437FF66D5.e.172}]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.1, moz:accessibilityChecks: false, moz:buildID: 20240321230221, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23356, moz:profile: C:\Users\herai\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.187:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 58745f59-4faa-4c07-b929-f55fc5274c3a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:468)
+	at com.task.automation.pages.CheckoutPage.selectFromDropDown(CheckoutPage.java:54)
+	at com.task.automation.pages.CheckoutPage.enterBillingDetailsNewUser(CheckoutPage.java:37)
+	at com.task.automation.MyFirstTestCase.logoutUserCheckoutFlow(MyFirstTestCase.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUserCheckoutFlow">
+                  </a> <!-- logoutUserCheckoutFlow -->
+                  <span class="method-name">logoutUserCheckoutFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: invalid element id
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4b24f1172a789ac29e8597c47df52b77, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=a5d0e204-29d5-4a6d-afee-f99b1b95d36d}]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\herai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.187:4444/ses..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b24f1172a789ac29e8597c47df52b77
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:468)
+	at com.task.automation.pages.CheckoutPage.selectFromDropDown(CheckoutPage.java:54)
+	at com.task.automation.pages.CheckoutPage.enterBillingDetailsNewUser(CheckoutPage.java:40)
+	at com.task.automation.MyFirstTestCase.logoutUserCheckoutFlow(MyFirstTestCase.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-sanitySuite-class-skipped -->
           <div class="suite-sanitySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,18 +228,25 @@
                   <span class="method-name">logoutUserCheckoutFlow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUserCheckoutFlow">
+                  </a> <!-- logoutUserCheckoutFlow -->
+                  <span class="method-name">logoutUserCheckoutFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-sanitySuite-class-passed -->
         </div> <!-- panel sanitySuite -->
         <div panel-name="test-xml-sanitySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\IT\Project\AmazonPractice\sanity.xml</span>
+            <span class="header-content">D:\IT\Project\AmazonPractice\gridparallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;sanitySuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;sanitySuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;groups&gt;
     &lt;run&gt;
       &lt;include name=&quot;sanity&quot;/&gt;
@@ -157,12 +261,18 @@
     &lt;listener class-name=&quot;com.task.automation.utiities.RetryListeners&quot;/&gt;
     &lt;listener class-name=&quot;com.task.automation.utiities.TestNGListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;sanity&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;sanity1&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;remote_chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.task.automation.MyFirstTestCase&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- sanity --&gt;
+  &lt;/test&gt; &lt;!-- sanity1 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;sanity2&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;remote_firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.task.automation.MyFirstTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sanity2 --&gt;
 &lt;/suite&gt; &lt;!-- sanitySuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +284,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">sanity (1 class)</span>
+                <span class="test-name">sanity1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sanity2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,16 +329,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logoutUserCheckoutFlow')
 data.setCell(0, 2, 'com.task.automation.MyFirstTestCase')
-data.setCell(0, 3, 18905);
+data.setCell(0, 3, 17634);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'logoutUserCheckoutFlow')
+data.setCell(1, 2, 'com.task.automation.MyFirstTestCase')
+data.setCell(1, 3, 16198);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logoutUserCheckoutFlow')
+data.setCell(2, 2, 'com.task.automation.MyFirstTestCase')
+data.setCell(2, 3, 15586);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logoutUserCheckoutFlow')
+data.setCell(3, 2, 'com.task.automation.MyFirstTestCase')
+data.setCell(3, 3, 14223);
 window.suiteTableData['sanitySuite']= { tableData: data, tableDiv: 'times-div-sanitySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-sanitySuite">
               </div> <!-- times-div-sanitySuite -->
             </div> <!-- times-div -->
@@ -240,12 +365,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-sanitySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.task.automation.MyFirstTestCase</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginUserCheckoutFlow</span>
+                <br/>
+                <span class="ignored-method-name">loginUserCheckoutFlowFaiedCase</span>
+                <br/>
                 <span class="ignored-method-name">loginUserCheckoutFlow</span>
                 <br/>
                 <span class="ignored-method-name">loginUserCheckoutFlowFaiedCase</span>
@@ -262,16 +391,52 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.task.automation.MyFirstTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-name">initializeDriver(remote_chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver(remote_firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoutUserCheckoutFlow</span>
-                <span class="method-start">1604 ms</span>
+                <span class="method-start">1590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUserCheckoutFlow</span>
+                <span class="method-start">3449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">20517 ms</span>
+                <span class="method-start">15828 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver(remote_chrome)</span>
+                <span class="method-start">15970 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutUserCheckoutFlow</span>
+                <span class="method-start">17018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">19036 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver(remote_firefox)</span>
+                <span class="method-start">19704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutUserCheckoutFlow</span>
+                <span class="method-start">22213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">33217 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">39848 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
